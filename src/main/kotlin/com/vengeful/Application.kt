@@ -1,6 +1,7 @@
 package com.vengeful
 
 import com.vengeful.data.User
+import com.vengeful.data.emptyDbRouting
 import com.vengeful.data.getDatabaseBuilder
 import com.vengeful.data.getDbRouting
 import com.vengeful.data.getRoomDatabase
@@ -28,4 +29,5 @@ fun Application.module() {
     configureLoginRouting()
     configureRegisterRouting()
     getDbRouting()
+    emptyDbRouting()
 }
